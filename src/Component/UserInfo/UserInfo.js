@@ -1,10 +1,10 @@
 import React from 'react';
 
 const UserInfo = (props) => {
-    const {picture} = props.pic;
+    const { picture } = props.pic;
     return (
         <div>
-            <img src={picture.thumbnail} alt=""/>
+            <img src={picture.thumbnail} alt="" />
         </div>
     );
 };

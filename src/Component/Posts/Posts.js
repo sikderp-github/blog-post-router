@@ -1,6 +1,6 @@
-import React, { Comments } from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Grid, Box } from '@material-ui/core';
 
 
@@ -15,7 +15,6 @@ const Posts = (props) => {
 
     return (
         <Grid item xs={12}>
-
             <Box bgcolor="grey.200" textAlign="left" fontSize={16} fontStyle="normal" fontWeight={300} borderRadius={16} boxShadow={2} color="text.primary" p={1} m={1}>
                 <h2>Title : {title}</h2>
                 <h4>Details:  {body}</h4>

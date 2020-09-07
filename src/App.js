@@ -3,8 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Posts from './Component/Posts/Posts';
 import NoMatch from './Component/NoMatch/NoMatch';
@@ -24,13 +23,13 @@ function App() {
             <Home />
           </Route>
           <Route path='/post'>
-            <Posts></Posts>
+            <Posts />
           </Route>
           <Route path='/posts/:postId/comments'>
-            <Comments></Comments>
+            <Comments />
           </Route>
           <Route path="*">
-            <NoMatch></NoMatch>
+            <NoMatch />
           </Route>
         </Switch>
       </Router>
